@@ -1,0 +1,60 @@
+<!--Ashley Landin: Assignment 10.3-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>CSD 340 Web Development with HTML and CSS</title>
+	<script>
+		function displayImage(imageFile){
+		var largerImage = document.getElementById("mainImage");
+        var newNode = document.createElement("img");
+        newNode.id = "mainImage";
+        newNode.src = imageFile;
+        newNode.alt = "Large Image";
+        newNode.className = "mainImage";
+        newNode.style.width = "300px";
+        newNode.style.height = "200px";
+        largerImage.parentNode.replaceChild(newNode, largerImage);
+    }
+	</script>
+</head>
+<body>
+	<h1>Assignment 10.3: JavaScript - Part 2</h1>
+	<br />
+    <div>
+      <a href=#
+         onmouseover="cave.src='Example_10/cave_01.jpg';"
+         onmouseout= "cave.src='Example_10/cave_02.jpg';"
+         onclick="cave.src='Example_10/moon_01.jpg';"
+      >
+        <img border = 0 name = "cave" src = "Example_10/cave_02.jpg">
+      </a>
+    </div>
+    <br />
+    <div
+         onmouseover="this.style.color='red';"
+         onmouseout= "this.style.color='black';">
+
+      Run your mouse over the image to change.
+      <br />
+
+    </div>
+    <div>
+      <a href=#
+         onmouseover="moon.src='Example_10/moon_01.jpg';"
+         onmouseout= "moon.src='Example_10/moon_02.jpg';"
+         onclick="moon.src='Example_10/cave_01.jpg';"
+      >
+        <img border = 0 name = "moon" src = "Example_10/moon_02.jpg">
+      </a>
+    </div>
+    <br />
+    <div
+         onmouseover="this.style.color='red';"
+         onmouseout= "this.style.color='black';">
+
+      Run your mouse over the image to change.
+      <br />
+      Click image to change display.
+    </div>
+  </body>
+</html>

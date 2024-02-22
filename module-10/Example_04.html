@@ -1,0 +1,70 @@
+<!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.01 Transitional//EN'
+  'http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd'>
+
+<html xmlns='http://www.w3.org/1999/xhtml'>
+  <head>
+    <title>
+      CSD 340 Web Development with HTML and CSS
+    </title>
+    <script>
+      function displayImage(imageFile){
+        var largerImage = document.getElementById("mainImage");
+        var newNode = document.createElement("img");
+        newNode.id = "mainImage";
+        newNode.src = imageFile;
+        newNode.alt = "Large Image";
+        newNode.className = "mainImage";
+        newNode.style.width = "300px";
+        newNode.style.height = "200px";
+        largerImage.parentNode.replaceChild(newNode, largerImage);
+      }
+
+    </script>
+
+    <link rel='stylesheet' type='text/css' href='body1.css' />
+
+  </head>
+
+  <body>
+    <br />
+    <div>
+      <a href=#
+         onmouseover="cave.src='Example_10/cave_01.jpg';"
+         onmouseout= "cave.src='Example_10/cave_02.jpg';"
+         onclick="cave.src='Example_10/moon_01.jpg';"
+      >
+        <img border = 0 name = "cave" src = "Example_10/cave_02.jpg">
+      </a>
+    </div>
+    <br />
+    <div
+         onmouseover="this.style.color='red';"
+         onmouseout= "this.style.color='black';">
+
+      Run your mouse over the image to change.
+      <br />
+
+    </div>
+    <div>
+      <a href=#
+         onmouseover="moon.src='Example_10/moon_01.jpg';"
+         onmouseout= "moon.src='Example_10/moon_02.jpg';"
+         onclick="moon.src='Example_10/cave_01.jpg';"
+      >
+        <img border = 0 name = "moon" src = "Example_10/moon_02.jpg">
+      </a>
+    </div>
+    <br />
+    <div
+         onmouseover="this.style.color='red';"
+         onmouseout= "this.style.color='black';">
+
+      Run your mouse over the image to change.
+      <br />
+      Click image to change display.
+
+    </div>
+
+  </body>
+
+</html>
