@@ -1,0 +1,39 @@
+<!--Ashley Landin: Assignment 11.2-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>CSD 340 Web Development with HTML and CSS</title>
+	<script>
+		var userList = [];
+		function addElement(userList){
+			var userAdd = document.getElementById("UItext");
+			var addVal = userAdd.value;
+			userList.push(addVal);
+			alert("Element added to list at index " + (userList.length - 1));
+		}
+		function remElement(userList){
+			userList.pop();
+			alert("Last element of list removed.");
+		}
+		function showList(userList){
+			document.getElementById("list").innerHTML = ("");
+			var LI_list = [];
+			for(var i = 0; i < userList.length; ++i){
+				LI_list += ("<li>" + userList[i] + "</li>"); 
+			}
+			document.getElementById("list").innerHTML += ("<ol>" + LI_list + "</ol>");
+		}
+	</script>
+</head>
+
+<body>
+	<h1>
+		Assignment 11.2: JavaScript - Part 3
+	</h1>
+	<label for="UserInput">Type something here:</label>
+	<input type="text" id="UItext" placeholder="Something...">
+	<button type="button" onclick="addElement(userList)">Add</button>
+	<button type="button" onclick="remElement(userList)">Delete Last Entry</button>
+	<button type="button" onclick="showList(userList)">Display All Entries</button>
+	<div id="list"></div>
+</body>
