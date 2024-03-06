@@ -1,0 +1,75 @@
+h1 {
+	text-align: center;
+	border-color: darkred;
+	border-width: 1px;
+	border-style: solid;
+	background-color: lightpink;
+	padding: 10px;
+	margin-left: 33%;
+}
+
+#container {
+	background-color: beige;
+}
+
+#left {
+	width: 40%;
+	float: left;
+	border-color: red;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 15px;
+	padding: 10px;
+	background-color: floralwhite;
+	margin-left: 5%;
+}
+#right {
+	width: 40%;
+	float: right;
+	border-color: red;
+	border-width: 1px;
+	border-style: dashed;
+	border-radius: 15px;
+	padding: 10px;
+	background-color: floralwhite;
+	margin-right: 5%;
+}
+
+#last {
+	width: 100%;
+	margin-top: 60%;
+	margin-bottom: 20px;
+	text-align: right;
+}
+
+button {
+	border-color: darkred;
+	border-style: double;
+	background-color: lightpink;
+}
+button:hover{
+	text-decoration: underline;
+	background-color: yellow;
+}
+
+h3 {
+	font-weight: 500;
+}
+
+ol {
+	font-weight: 300;
+	list-style-position: inside;
+}
+
+ul {
+	font-weight: 300;
+	list-style-type: upper-roman;
+	list-style-position: inside;
+}
+
+a:link {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
